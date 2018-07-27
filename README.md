@@ -7,88 +7,70 @@
 [![Known Vulnerabilities][snyk-image]][snyk-url]
 [![npm download][download-image]][download-url]
 
-[npm-image]: https://img.shields.io/npm/v/egg-qiniu-upload.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/egg-qiniu-upload
-[travis-image]: https://img.shields.io/travis/eggjs/egg-qiniu-upload.svg?style=flat-square
-[travis-url]: https://travis-ci.org/eggjs/egg-qiniu-upload
-[codecov-image]: https://img.shields.io/codecov/c/github/eggjs/egg-qiniu-upload.svg?style=flat-square
-[codecov-url]: https://codecov.io/github/eggjs/egg-qiniu-upload?branch=master
-[david-image]: https://img.shields.io/david/eggjs/egg-qiniu-upload.svg?style=flat-square
-[david-url]: https://david-dm.org/eggjs/egg-qiniu-upload
-[snyk-image]: https://snyk.io/test/npm/egg-qiniu-upload/badge.svg?style=flat-square
-[snyk-url]: https://snyk.io/test/npm/egg-qiniu-upload
-[download-image]: https://img.shields.io/npm/dm/egg-qiniu-upload.svg?style=flat-square
-[download-url]: https://npmjs.org/package/egg-qiniu-upload
+[npm-image]: https://img.shields.io/npm/v/mj-egg-qiniu.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/mj-egg-qiniu
+[travis-image]: https://img.shields.io/travis/eggjs/mj-egg-qiniu.svg?style=flat-square
+[travis-url]: https://travis-ci.org/eggjs/mj-egg-qiniu
+[codecov-image]: https://img.shields.io/codecov/c/github/eggjs/mj-egg-qiniu.svg?style=flat-square
+[codecov-url]: https://codecov.io/github/eggjs/mj-egg-qiniu?branch=master
+[david-image]: https://img.shields.io/david/eggjs/mj-egg-qiniu.svg?style=flat-square
+[david-url]: https://david-dm.org/eggjs/mj-egg-qiniu
+[snyk-image]: https://snyk.io/test/npm/mj-egg-qiniu/badge.svg?style=flat-square
+[snyk-url]: https://snyk.io/test/npm/mj-egg-qiniu
+[download-image]: https://img.shields.io/npm/dm/mj-egg-qiniu.svg?style=flat-square
+[download-url]: https://npmjs.org/package/mj-egg-qiniu
 
 <!--
 Description here.
 -->
+## 说明
+取自egg-qiniu-upload，因无法自定义上传文件名称，所以自己微调以后传了一个
+## 依赖说明
 
-## Install
+### 依赖的 egg 版本
 
-```bash
-$ npm i egg-qiniu-upload --save
-```
+egg-qiniu-upload 版本 | egg 1.x
+--- | ---
+1.x | 😁
+0.x | ❌
 
-## Usage
+### 依赖的插件
+<!--
+
+如果有依赖其它插件，请在这里特别说明。如
+
+- security
+- multipart
+
+-->
+
+## 开启插件
 
 ```js
-// {app_root}/config/plugin.js
-exports.qiniu = {
+// config/plugin.js
+exports.qiniuUpload = {
   enable: true,
   package: 'egg-qiniu-upload',
 };
 ```
 
-## Configuration
+## 使用场景
 
-```js
-// {app_root}/config/config.default.js
-exports.qiniu = {
-  // I ussually set the key into `~/.zshrc`, and I can get the value via `process.env.key`, It's very safe~
-  ak: 'your access key',
-  sk: 'your secret key',
-  bucket: 'yout bucket',
-  baseUrl: 'your base url',
-  zone: 'your zone',
-  app: true, // default value
-  agent: false, //default value
-};
-```
+- Why and What: 描述为什么会有这个插件，它主要在完成一件什么事情。
+尽可能描述详细。
+- How: 描述这个插件是怎样使用的，具体的示例代码，甚至提供一个完整的示例，并给出链接。
 
-see [config/config.default.js](config/config.default.js) for more detail, and more detail about qiniu please [see the document](https://developer.qiniu.com/kodo/sdk/1289/nodejs)
+## 详细配置
 
-## Example
+请到 [config/config.default.js](config/config.default.js) 查看详细配置项说明。
 
-### upload file to qiniu and return the url and key
+## 单元测试
 
-```js
-// {app_root}/app/service/file.js
-async upload2Qiniu(path,realname) {
-  const {app} = this
+<!-- 描述如何在单元测试中使用此插件，例如 schedule 如何触发。无则省略。-->
 
-  // do someting what you want to do........
+## 提问交流
 
-  return await app.qiniu.upload(path, realname)
-}
-/* return a Objet:
-{key:'your key',url:'your public url'}
-*/
-```
-### get the file info by your file's key
-
-```js
-// {app_root}/app/servcie/file.js
-async info(key) {
-  // your should auth the user's passport.
-  return await this.app.qiniu.info(key);
-}
-```
-### more function ...
-
-## Questions & Suggestions
-
-Please open an issue [here](https://github.com/eggjs/egg/issues).
+请到 [egg issues](https://github.com/eggjs/egg/issues) 异步交流。
 
 ## License
 
