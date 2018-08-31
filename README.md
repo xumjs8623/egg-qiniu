@@ -1,24 +1,5 @@
 # egg-qiniu-upload
 
-[![NPM version][npm-image]][npm-url]
-[![build status][travis-image]][travis-url]
-[![Test coverage][codecov-image]][codecov-url]
-[![David deps][david-image]][david-url]
-[![Known Vulnerabilities][snyk-image]][snyk-url]
-[![npm download][download-image]][download-url]
-
-[npm-image]: https://img.shields.io/npm/v/mj-egg-qiniu.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/mj-egg-qiniu
-[travis-image]: https://img.shields.io/travis/eggjs/mj-egg-qiniu.svg?style=flat-square
-[travis-url]: https://travis-ci.org/eggjs/mj-egg-qiniu
-[codecov-image]: https://img.shields.io/codecov/c/github/eggjs/mj-egg-qiniu.svg?style=flat-square
-[codecov-url]: https://codecov.io/github/eggjs/mj-egg-qiniu?branch=master
-[david-image]: https://img.shields.io/david/eggjs/mj-egg-qiniu.svg?style=flat-square
-[david-url]: https://david-dm.org/eggjs/mj-egg-qiniu
-[snyk-image]: https://snyk.io/test/npm/mj-egg-qiniu/badge.svg?style=flat-square
-[snyk-url]: https://snyk.io/test/npm/mj-egg-qiniu
-[download-image]: https://img.shields.io/npm/dm/mj-egg-qiniu.svg?style=flat-square
-[download-url]: https://npmjs.org/package/mj-egg-qiniu
 
 <!--
 Description here.

@@ -1,6 +1,6 @@
 {
   "name": "mj-egg-qiniu",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "upload file to qiniu plugin for egg-framework, based on qiniu",
   "eggPlugin": {
     "name": "qiniu"
@@ -48,12 +48,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Raoul1996/egg-qiniu-upload.git"
+    "url": "git+https://github.com/xumjs8623/egg-qiniu"
   },
   "bugs": {
     "url": "https://github.com/eggjs/egg/issues"
   },
-  "homepage": "https://github.com/Raoul1996/egg-qiniu-upload#readme",
-  "author": "Raoul1996 <baobaozhou1996@gmail.com>",
+  "homepage": "https://github.com/xumjs8623/egg-qiniu#readme",
+  "author": "mj <xumj8955@126.com>",
   "license": "MIT"
 }
