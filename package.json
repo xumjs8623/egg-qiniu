@@ -1,6 +1,6 @@
 {
   "name": "mj-egg-qiniu",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "upload file to qiniu plugin for egg-framework, based on qiniu",
   "eggPlugin": {
     "name": "qiniu"

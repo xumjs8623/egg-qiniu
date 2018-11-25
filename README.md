@@ -48,6 +48,20 @@ exports.qiniu = {
   agent: false, //default value
 };
 ```
+### 获取token
+```js
+// {app_root}/app/service/file.js
+async upload2Qiniu(path,realname) {
+  const {app} = this
+ 
+  // do someting what you want to do........
+ 
+  return await app.qiniu.getToken()
+}
+/* return a Objet:
+{key:'your key',url:'your public url'}
+*/
+```
 ### 根据文件路径上传
 ```js
 // {app_root}/app/service/file.js
